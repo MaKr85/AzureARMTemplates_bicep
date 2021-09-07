@@ -1,0 +1,54 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "dp-adfmain-ref"
+        },
+        "DWH_Ref_connectionString": {
+            "value": ""
+        },
+        "FileStorage_external_connectionString": {
+            "value": ""
+        },
+        "dplakestorageref_accountKey": {
+            "value": ""
+        },
+        "dpstorageexternalref_accountKey": {
+            "value": ""
+        },
+        "external_SQL_WideWorldImporters_connectionString": {
+            "value": ""
+        },
+        "CurrencyAPI_properties_typeProperties_url": {
+            "value": "https://www.live-rates.com/rates"
+        },
+        "dp_keyvault_ref_properties_typeProperties_baseUrl": {
+            "value": "https://dp-keyvault-ref.vault.azure.net/"
+        },
+        "dplakestorageref_properties_typeProperties_url": {
+            "value": "https://dplakestorageref.dfs.core.windows.net"
+        },
+        "dpstorageexternalref_properties_typeProperties_url": {
+            "value": "https://dpstorageexternalref.dfs.core.windows.net"
+        },
+        "azureSQLprivateEndpoint_properties_privateLinkResourceId": {
+            "value": "/subscriptions/147eb7a5-1550-417c-aad5-c39c3e264d4d/resourceGroups/Referenz_Core/providers/Microsoft.Sql/servers/dplakesqlserver-ref"
+        },
+        "azureSQLprivateEndpoint_properties_groupId": {
+            "value": "sqlServer"
+        },
+        "dplakestorageref_ep_properties_privateLinkResourceId": {
+            "value": "/subscriptions/147eb7a5-1550-417c-aad5-c39c3e264d4d/resourceGroups/Referenz_Core/providers/Microsoft.Storage/storageAccounts/dplakestorageref"
+        },
+        "dplakestorageref_ep_properties_groupId": {
+            "value": "dfs"
+        },
+        "dpstorageexternalref_ep_properties_privateLinkResourceId": {
+            "value": "/subscriptions/147eb7a5-1550-417c-aad5-c39c3e264d4d/resourceGroups/Referenz_External/providers/Microsoft.Storage/storageAccounts/dpstorageexternalref"
+        },
+        "dpstorageexternalref_ep_properties_groupId": {
+            "value": "dfs"
+        }
+    }
+}

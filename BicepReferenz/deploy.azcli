@@ -1,0 +1,20 @@
+# Login in Azure
+az login
+# Die richtige Subscription auswählen
+az account set --subscription 'MS BI Sandbox'
+# Prüfen obs geklappt hat
+az account show --output table
+
+# RG erstellen in die deployed werden soll
+az group create --name 'bicep-test-fgr' --location 'westeurope'
+# Deployment durchführen 
+az deployment group create --resource-group 'bicep-test-fgr' --template-file referenzarchitektur.bicep
+
+
+
+
+## Decompile ARM json to bicep 
+## https://github.com/Azure/azure-quickstart-templates
+cd examples
+az bicep decompile --file example.json
+cd..
